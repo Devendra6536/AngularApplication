@@ -1,0 +1,27 @@
+<div class="home-container">
+<div [class]="condition?'container':'myColor'">
+  <h1>{{"Hello " + name +" Your age is "+age}}</h1>
+  <input type="text" placeholder="enter your name" class="greet" [value]="title" [id]="myID" [disabled]="isDisable">
+  <br><br>
+
+  <!-- <button (click)="greet('Devendra kumar',20)">Greet</button> -->
+  <!-- <button (click)="greet($event)">Greet</button> -->
+  <button (keypress)="greet($event)" [className]="className">Greet</button>
+
+
+  <!-- <h1 [className]="'class mywriting'">Hello devendra kumar pal garhikhanpur buduan uttar pradesh india</h1> -->
+  <h1 [className]="class">Hello devendra kumar </h1>
+  <h2 [class.myColor]="condition">Hello devendra kumar </h2>
+</div>
+
+<h2 [class]="myFunc()">Cavisson system inc </h2>
+</div>
+
+<h2 [class]="condition?'myColor':'mywriting'">Inspector </h2>
+<app-user></app-user>
+<hr height="10px">
+<br><br><br>
+
+<h2>This is the ngclass Component</h2>
+<app-ngclass></app-ngclass>
+<app-stylebinding></app-stylebinding>
