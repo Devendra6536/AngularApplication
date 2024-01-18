@@ -11,6 +11,8 @@ export class StylebindingComponent {
   {
     'color':'orange',
     'background-color':'black',
-    'font-family':'cooper'
+    'font-family':'cooper',
+    'fontSize':'60px'
   };
+  public condition=true;
 }
