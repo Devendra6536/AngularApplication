@@ -1,0 +1,156 @@
+<div class="container">
+  <div [ngClass]="'bookBox'">
+    <img [src]="imageD" [style]="'text-align:center;'" [ngClass]="'bookImage'">
+    <div class="checkoutButtons">
+      <button (click)="counter()" [ngClass]="'btn'">Add one item +</button>
+      <button (click)="decreaseCounter()" ngClass="btn">Remove an item -</button>
+    </div>
+  </div>
+  <div [ngClass]="'book_information'">
+
+
+    <h2>SSC Mathematics 7300+ Bilingual By Rakesh Yadav Sir || All TCS Pattern 7300+ Typewise Questions || 2023 Edition
+      (Paperback, Hindi, RAKESH YADAV SIR)</h2>
+    <h3 [ngStyle]="{'color':'#878787'}">This is the best book for ssc aspirants. This book have the clear and crystal
+      concept</h3>
+    <br>
+    <div class="bankoffer">
+      <h3>Available offers</h3>
+      <p><img
+          src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+          width="18" height="18"><b>Bank Offer</b>10% off on Bank of Baroda Credit Card and EMI Transactions, up to
+        ₹1500 on orders of ₹5000 and aboveT&C </p>
+      <p><img
+          src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+          width="18" height="18"><b>Bank Offer</b>10% off on Canara Bank Credit Card Transactions, up to ₹1,500 on
+        orders of ₹5,000 and aboveT&C</p>
+      <p><img
+          src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+          width="18" height="18"><b>Bank Offer</b>10% off on Citi-branded Credit Card EMI Transactions, up to ₹2,000 on
+        orders of ₹10,000 and aboveT&C</p>
+      <p><img
+          src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+          width="18" height="18">Buy This Product and get <b>₹500</b> Off on Next AC Purchase*T&C</p>
+      <a href="#" class="offers_lsiting">view 5 more offers</a>
+    </div>
+
+    <h1>Price - 500Rs</h1>
+    <div class="itemcount_container">
+      <h2>{{"Total Item - "+ count }} </h2>
+    </div>
+    <div class="orderCheckOutbut">
+      <button (click)="placeOrder(count)" ngClass="btn">Place an order</button>
+    </div>
+
+    <div class="container">
+      <h1 [ngStyle]="{'font-size':'30px'}">{{"Total rs is "+totalRS}}</h1>
+    </div>
+
+
+
+    <div class="specification">
+      <div class="heading">
+        <h1>Specification</h1>
+      </div>
+      <p>
+        Specifications
+        Book
+        SSC Mathematics 7300+ Bilingual By Rakesh Yadav Sir || All TCS Pattern 7300+ Typewise Questions || 2023 Edition
+        Author
+        RAKESH YADAV SIR
+        Binding
+        Paperback
+        Publishing Date
+        2023
+        Publisher
+        RAKESH YADAV READERS PUBLICATION PVT. LTD.
+        Edition
+        2023
+        Number of Pages
+        936
+        Language
+        Hindi
+
+      </p>
+      <h1>Password checker</h1>
+      <input type="password" [(ngModel)]="Name" placeholder="Enter Your Password" (keyup)="getNameLength()"
+        [ngClass]="'passwordChecker'">
+      <h1 *ngIf="condition; then weakpassword;">Password checker</h1>
+
+      <!-- //password checkeer -->
+
+      <h2 *ngIf="length">Password length is - 0</h2>
+      <ng-template #weakpassword>
+        <h1 style="font-size: 20px;" [style.color]="color">{{passwordStatus}}</h1>
+      </ng-template>
+
+
+
+
+      <div *ngIf="variable1==1; then ifPart; else elsePart">
+        <h1>This is Container</h1>
+      </div>
+
+      <ng-template #ifPart>
+        <h1>this is true</h1>
+      </ng-template>
+      <ng-template #elsePart>
+        <h1>this is false</h1>
+      </ng-template>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="containers">
+    <h2>This is the pizza choice program</h2>
+
+    <div class="pizza_choice_container" [ngSwitch]="pizza_choice">
+      <div *ngSwitchCase="'pappy'">
+        <p>this is pappy panner pizza</p>
+      </div>
+      <div *ngSwitchCase="'capsicum'">
+        <p>this is capsicum pizza</p>
+      </div>
+      <div *ngSwitchCase="'Supreme'">
+        <p>this is Supreme pizza</p>
+      </div>
+      <div *ngSwitchDefault>
+        <p>this pizza flavour is not available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container3">
+  <h2>This is NgFor program</h2>
+  <div *ngFor="let fruit of fruits; index as i">
+    <h2>{{i}} -> {{fruit}}</h2>
+  </div>
+</div>
+
+
+<div class="container3">
+  <h2>This is Example of for loop in javascript</h2>
+  <div *ngFor="let friend of friendsList; index as i">
+    <h2>{{friend.Name +" "+ friend.Age}}</h2>
+
+    <table class="friends_table" >
+
+      <thead >
+        <tr>
+          <th *ngFor="let header of header">{{header}}</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let friend of friendsList; index as i" class="data_row">
+        <td>{{friend.Name}}</td>
+        <td>{{friend.Desg}}</td>
+        <td>{{friend.Age}}</td>
+      </tr>
+    </table>
+  </div>
+
+</div>

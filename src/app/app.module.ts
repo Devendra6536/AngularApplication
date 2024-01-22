@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +8,9 @@ import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { CounterComponent } from './counter/counter.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     UserComponent,
     HomeComponent,
     NgclassComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    EmployeeComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

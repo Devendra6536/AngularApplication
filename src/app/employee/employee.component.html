@@ -1,0 +1,18 @@
+<p>home works!</p>
+<input type="text" #namebox placeholder="Enter your name" (keyup)="getName(namebox.value)" name="myName">
+<button (click)="getName1(namebox.value)">Click</button>
+<button (click)="getName1(namebox.placeholder)">Click</button>
+<button (click)="getName1(namebox.name)">getName</button>
+<button (click)="getInput(namebox)">getName</button>
+<h1>{{"Hello - "+Name}}</h1>
+
+<h2 #heading>Devendra Kumar pal garhikhanpur budun uttar</h2>
+<button (click)="getHeading(heading.innerHTML)">Get Heading</button>
+
+<div class="container">
+<h1 [style]="'text-align:center;'">This is container</h1>
+<input type="text"  placeholder="Enter your first name" #fname><br>
+<input type="text" placeholder="Enter your second name" #sname>
+<button (click)="generateName(fname.value,sname.value)">Click here</button>
+<h2>{{"You entered " +UserName}}</h2>
+</div>
