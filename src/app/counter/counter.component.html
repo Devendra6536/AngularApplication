@@ -135,7 +135,7 @@
 
 <div class="container3">
   <h2>This is Example of for loop in javascript</h2>
-  <div *ngFor="let friend of friendsList; index as i">
+  <div *ngFor="let friend of friendsList; index as i" >
     <h2>{{friend.Name +" "+ friend.Age}}</h2>
 
     <table class="friends_table" >
@@ -145,10 +145,15 @@
           <th *ngFor="let header of header">{{header}}</th>
         </tr>
       </thead>
-      <tr *ngFor="let friend of friendsList; index as i" class="data_row">
+      <tr *ngFor="let friend of friendsList; index as i">
         <td>{{friend.Name}}</td>
         <td>{{friend.Desg}}</td>
         <td>{{friend.Age}}</td>
+        <td>
+          <ol>
+            <li *ngFor="let hobby of friend.hobies">{{hobby}}</li>
+          </ol>
+        </td>
       </tr>
     </table>
   </div>

@@ -10,6 +10,7 @@ import { NgclassComponent } from './ngclass/ngclass.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { CounterComponent } from './counter/counter.component';
+import { GreetComponent } from './greet/greet.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CounterComponent } from './counter/counter.component';
     NgclassComponent,
     StylebindingComponent,
     EmployeeComponent,
-    CounterComponent
+    CounterComponent,
+    GreetComponent
   ],
   imports: [
     BrowserModule,

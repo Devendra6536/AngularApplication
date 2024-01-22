@@ -19,6 +19,7 @@ export class HomeComponent {
   public isDisable=true;
   public class="mywriting";
   public condition=true;
+  public Name="SI Devendra kumar ";
   // greet(a:string, b:number){
   //   this.name=a;
   //   this.age=b;
@@ -31,7 +32,17 @@ export class HomeComponent {
   myFunc(){
     return "myClass";
   }
+  changeData(){
+    this.Name="SI Dev Kumar";
+  }
 
+
+  public fruits  = ["Apple","Mango","Grapes","Banana"]
+  myobject={
+      Name:"Devendra kumar",
+      Age:21,
+      Desg:"Police inspector"
+  }
 }
 
 
