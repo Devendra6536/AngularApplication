@@ -3,7 +3,7 @@
   background-color: aliceblue;
   color: black;
   margin:auto;
-  padding: 20px;
+  padding: 10px;
   width: 80%;
   text-align: center;
   overflow-x: auto;
@@ -17,7 +17,6 @@ table{
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 70%;
-  margin: 10px 20px;
 }
 th {
   background-color: hsl(158, 95%, 34%);

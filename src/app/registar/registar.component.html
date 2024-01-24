@@ -1,0 +1,26 @@
+
+
+  <div class="container3">
+    <h1>Registarar</h1>
+      <table class="friends_table" >
+
+        <thead >
+          <tr>
+            <th>Name</th>
+            <th>Desg</th>
+            <th>Friend</th>
+            <th>Hobbies</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let friend of Students; index as i">
+          <td>{{friend.Name}}</td>
+          <td>{{friend.Desg}}</td>
+          <td>{{friend.Age}}</td>
+          <td>
+            <ol>
+              <li *ngFor="let hobby of friend.hobies">{{hobby}}</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>

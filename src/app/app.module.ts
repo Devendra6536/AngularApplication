@@ -16,6 +16,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { StudentDataComponent } from './student-data/student-data.component';
 import { CSEComponent } from './cse/cse.component';
 import { CricketTeamComponent } from './cricket-team/cricket-team.component';
+import { RegistarComponent } from './registar/registar.component';
+import { StudentServiceService } from './services/student-service.service';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { CricketTeamComponent } from './cricket-team/cricket-team.component';
     LandingpageComponent,
     StudentDataComponent,
     CSEComponent,
-    CricketTeamComponent
+    CricketTeamComponent,
+    RegistarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { CricketTeamComponent } from './cricket-team/cricket-team.component';
     FormsModule
   ],
   providers: [
+    StudentServiceService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
