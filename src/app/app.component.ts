@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newapp';
+
+  public myName="";
+  getName(username:string){
+    this.myName=username;
+  }
+  public Introduction="";
+
+  public todayDate = new Date();
+
 }

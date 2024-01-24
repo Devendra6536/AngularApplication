@@ -76,7 +76,7 @@ public color="";
 
 
 
-    public header=["Name","Designation","Age","Hobbies"]
+  public header=["Name","Designation","Age","Hobbies"]
 
 
     public friendsList=[

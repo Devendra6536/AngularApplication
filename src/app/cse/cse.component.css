@@ -1,0 +1,36 @@
+
+.container3{
+  background-color: aliceblue;
+  color: black;
+  margin:auto;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  overflow-x: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+table{
+  border-collapse: collapse;
+  border: 2px solid green;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  margin: 10px 20px;
+}
+th {
+  background-color: hsl(158, 95%, 34%);
+  color: white;
+  padding: 10px;
+  min-width: 50px;
+}
+
+td{
+  padding: 10px;
+  text-align: left;
+  border:2px solid green;
+}
+tr:hover{
+  background-color: coral;
+}

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-greet',
@@ -11,4 +11,14 @@ export class GreetComponent {
   @Input('myName') Name:string='';
   @Input() fruits:string[]=[];
   @Input() myData:any={};
+
+
+
+
+  //first we make the event in the child ts file
+  @Output() public childEvent= new EventEmitter();
+
+  fireEvent(){
+    this.childEvent.emit("Devendra kumar pal garhikhanpur buduan uttar 202325");
+  }
 }

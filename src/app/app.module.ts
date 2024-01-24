@@ -11,6 +11,11 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { CounterComponent } from './counter/counter.component';
 import { GreetComponent } from './greet/greet.component';
+import { GreetingboxComponent } from './greetingbox/greetingbox.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { StudentDataComponent } from './student-data/student-data.component';
+import { CSEComponent } from './cse/cse.component';
+import { CricketTeamComponent } from './cricket-team/cricket-team.component';
 
 
 @NgModule({
@@ -22,7 +27,12 @@ import { GreetComponent } from './greet/greet.component';
     StylebindingComponent,
     EmployeeComponent,
     CounterComponent,
-    GreetComponent
+    GreetComponent,
+    GreetingboxComponent,
+    LandingpageComponent,
+    StudentDataComponent,
+    CSEComponent,
+    CricketTeamComponent
   ],
   imports: [
     BrowserModule,

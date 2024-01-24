@@ -43,6 +43,10 @@ export class HomeComponent {
       Age:21,
       Desg:"Police inspector"
   }
+
+  public msg:string="";
+  public date = new Date();
+
 }
 
 
